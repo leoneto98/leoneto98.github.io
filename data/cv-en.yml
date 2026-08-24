@@ -1,0 +1,208 @@
+lang: en
+
+perfil:
+  nome: Leonardo Novicki Neto
+  headline: "Data Scientist | Machine Learning"
+  local: "Curitiba, Brazil"
+  telefone: "+55 (41) 99615-8089"
+  email: "leoneto98@me.com"
+  linkedin_url: "https://www.linkedin.com/in/leonardo-novicki-neto-6290a1a0/"
+  linkedin_label: "linkedin.com/in/leonardo-novicki-neto"
+  github_url: "https://github.com/leoneto98"
+  github_label: "github.com/leoneto98"
+  resumo: >
+    Data Scientist with an M.Sc. in Electrical Engineering (UFPR) and a B.Sc. in Physics,
+    working on end-to-end Machine Learning — from identifying the business opportunity to
+    deploying and maintaining models in production. Experience with regression, classification
+    and time-series models applied to large volumes of sensor data, using Python, PyTorch and
+    AWS. I enjoy turning complex operational problems into analytical solutions with measurable
+    impact, working directly with business stakeholders.
+
+titulos:
+  competencias: Technical Skills
+  experiencia: Professional Experience
+  formacao: Education
+  publicacoes: Publications
+  complementar: Additional Training
+  idiomas: Languages
+
+competencias:
+  - grupo: "Languages"
+    itens: "Python, SQL (MySQL, Amazon Athena), MATLAB"
+  - grupo: "ML & Deep Learning"
+    itens: "PyTorch, PyTorch Lightning, ConvLSTM, ConvGRU, CNN+Attention, LSTM, GRU, XGBoost, Random Forest, regression, time series, clustering, scikit-learn"
+  - grupo: "Computer Vision"
+    itens: "YOLO, YOLOP, OpenCV, semantic segmentation, genetic algorithms"
+  - grupo: "Cloud & MLOps"
+    itens: "AWS (Athena, S3, Glue, Lambda, SageMaker, ECS), Kedro, MLflow, Docker, REST APIs, awswrangler"
+  - grupo: "Data & BI"
+    itens: "Pandas, Polars, ETL, Power BI"
+  - grupo: "Other"
+    itens: "Git, ROS (Robot Operating System), Google Protocol Buffers, Agile (daily, sprint planning, sprint review)"
+
+experiencia:
+  - empresa: "Rumo Logística"
+    cargo: "Data Scientist — Data Intelligence"
+    periodo: "Aug 2024 – Aug 2026"
+    local: "Curitiba, Brazil"
+    contexto: >
+      Joined through the Talento Inovação programme (IEL) for master's graduates and was hired directly by the company in April 2025.
+    bullets:
+      - tier: 1
+        texto: >
+          Raised precision from *55% to 95%* and recall from *39% to 60%* in predicting track
+          closures caused by gauge widening, against a linear-regression baseline — increasing the
+          accuracy of preventive maintenance and avoiding the high operational cost of track closures.
+      - tier: 1
+        texto: >
+          Led the Data Science workstream of VIAbiliza, a project *identified by McKinsey as one of
+          the highest-impact initiatives in the company*. I proposed, developed and implemented
+          end-to-end the predictive models currently running in production.
+      - tier: 1
+        texto: >
+          Identified the state of the art in the literature for predicting track-geometry degradation
+          (LSTM with spatial convolution, applied to high-speed railways in Tokyo) and adapted the
+          solution to a heavy-haul freight context, with custom preprocessing, training and evaluation criteria.
+      - tier: 1
+        texto: >
+          Developed and trained deep learning models for spatio-temporal forecasting of track
+          irregularities — ConvLSTM, ConvGRU and CNN+Attention architectures in PyTorch / PyTorch
+          Lightning — with a custom exogenous-variable fusion mechanism (embeddings + concatenation
+          along the channel axis).
+      - tier: 1
+        texto: >
+          Solved the geographic misalignment between runs of the track geometry car — a well-known
+          problem in the industry with no prior solution at the company — with an algorithm that
+          aligns *over 99%* of the data, enabling all subsequent predictive modelling.
+      - tier: 1
+        texto: >
+          Designed and implemented the data and ML pipeline in Kedro: from ETL on Amazon Athena to
+          dataset generation on S3, training with experiment tracking in MLflow, and production
+          inference — parameterised by target variable and able to compare multiple candidate models.
+      - tier: 1
+        texto: >
+          Deployment and maintenance of models in production: batch inference through scheduled
+          pipelines and a containerised service on AWS ECS consumed by other teams, integrated via REST APIs.
+      - tier: 1
+        texto: >
+          Processed track-geometry data at scale — measurements every *25 cm across more than 1,500 km*,
+          with runs every two weeks in both directions: cleaning, normalisation and construction of the
+          spatio-temporal windows used as model input.
+      - tier: 1
+        texto: >
+          First project: a sleeper (tie) maintenance prioritiser, built end-to-end in around 5 months —
+          ETL, enrichment with operational data (gross tonnage and maintenance history), a predictive
+          model of gauge degradation, and a Power BI dashboard used in strategic planning for the
+          Rondonópolis–Santos corridor.
+      - tier: 2
+        texto: >
+          Feature engineering from multiple sources — gross tonnage transported (MGT), infrastructure
+          defects, peak and degradation indicators, vehicle-track interaction (VTI), rainfall,
+          seasonality and sleeper type — transformed into tensors and fed to the models as exogenous variables.
+      - tier: 2
+        texto: >
+          Helped build the ingestion services that began feeding AWS Athena: the track geometry car data
+          existed only as .csv files, which made any large-scale analysis unfeasible.
+      - tier: 2
+        texto: >
+          Ran the comparative evaluation between linear regression, tree-based models (Random Forest,
+          XGBoost) and recurrent architectures.
+      - tier: 2
+        texto: >
+          Feasibility analysis of a new onboard sensor on the track geometry car for rail-lift detection,
+          producing the insights that guided the installation decision.
+      - tier: 2
+        texto: >
+          AWS stack: ingestion and querying on Amazon Athena (awswrangler), processing with AWS Glue and
+          Lambda, storage on S3, development and training on Amazon SageMaker and execution on ECS;
+          handling of large data volumes with Pandas and Polars.
+      - tier: 2
+        texto: >
+          Technical documentation of projects and models, working collaboratively with business (Track
+          Reliability), technology and data teams in an agile routine of daily, sprint planning and sprint review.
+
+  - empresa: "CARISSMA Institute of Automated Driving"
+    cargo: "Researcher — German government scholarship"
+    periodo: "Sep 2022 – Mar 2023"
+    local: "Ingolstadt, Germany"
+    contexto: ""
+    bullets:
+      - tier: 1
+        texto: >
+          Development of the TWICE Dataset, a public dataset for autonomous vehicle research with camera,
+          radar, LiDAR and GNSS/IMU sensors, under the supervision of Professors Werner Huber and Eduardo
+          Parente Ribeiro. Published in a peer-reviewed international journal.
+      - tier: 1
+        texto: >
+          Responsible for labelling the entire dataset, done semi-automatically by combining computer
+          vision algorithms (YOLO) with a genetic algorithm.
+      - tier: 1
+        texto: >
+          Analysis and validation using semantic segmentation (YOLOP) to quantify the simulation-to-reality
+          gap between the real tests and their digital twins.
+      - tier: 2
+        texto: >
+          Processing, transformation and organisation of the full volume of data collected by the institute's
+          researchers, publishing it in an agnostic and accessible format and developing the tools to open,
+          visualise and process the files. Python as the main tool, alongside MATLAB, ROS and Google Protocol Buffers.
+
+  - empresa: "Santa Lúcia Materiais de Construção"
+    cargo: "IT Technician | Customer Service"
+    periodo: "Jan 2016 – Sep 2022 · Nov 2023 – Aug 2024"
+    local: "Curitiba, Brazil"
+    contexto: ""
+    bullets:
+      - tier: 1
+        texto: >
+          Built an asset management system with a SQL database (MySQL) and a graphical interface in Python
+          (Tkinter), with screens to populate the database and generate reports.
+      - tier: 1
+        texto: >
+          Installation and maintenance of the computer network and electronic security systems, alongside
+          customer service and administrative support.
+
+formacao:
+  - instituicao: "Federal University of Paraná (UFPR), Brazil"
+    curso: "M.Sc. in Electrical Engineering"
+    periodo: "Mar 2022 – Nov 2023"
+    detalhe: >
+      Thesis: _TWICE Dataset: Digital Twin of Test Scenarios in a Controlled Environment_.
+      Coursework: Applied Artificial Intelligence, Machine Learning, Computer Vision, Signals and
+      Systems, Advanced Methods in Electronic Systems.
+  - instituicao: "Technische Hochschule Ingolstadt (THI), Germany"
+    curso: "Visiting Master's Researcher — Automated Driving"
+    periodo: "Sep 2022 – Mar 2023"
+    detalhe: >
+      German government scholarship to carry out the master's research project at CARISSMA.
+  - instituicao: "Federal University of Paraná (UFPR), Brazil"
+    curso: "B.Sc. in Physics"
+    periodo: "Aug 2016 – Aug 2021"
+    detalhe: >
+      Graduated with a mean grade of 82.17 (0–100 scale), never failing a course. Undergraduate research
+      (CNPq scholarship) with Prof. Dr. Cyro Ketzer Saul on the development of a supercapacitor — data
+      collection, analysis and processing.
+
+publicacoes:
+  - texto: "_TWICE Dataset: Digital Twin of Test Scenarios in a Controlled Environment_ — International Journal of Vehicle Systems Modelling and Testing (2025)."
+    url: "https://www.inderscienceonline.com/doi/10.1504/IJVSMT.2025.147353"
+    url_label: "doi.org/10.1504/IJVSMT.2025.147353"
+  - texto: "Pre-print (arXiv) —"
+    url: "https://arxiv.org/abs/2310.03895"
+    url_label: "arxiv.org/abs/2310.03895"
+  - texto: "Project page —"
+    url: "https://twicedataset.github.io/site"
+    url_label: "twicedataset.github.io/site"
+  - texto: "Full thesis — UFPR Digital Archive"
+    url: "https://acervodigital.ufpr.br/xmlui/handle/1884/87239"
+    url_label: "acervodigital.ufpr.br/handle/1884/87239"
+
+complementar:
+  - "Machine Learning Specialization — Stanford University / DeepLearning.AI (Feb – Mar 2024)"
+
+idiomas:
+  - nome: "Portuguese"
+    nivel: "Native"
+  - nome: "English"
+    nivel: "Advanced — master's thesis written and presented in English; 6 months in Germany with daily communication in the language"
+  - nome: "Spanish"
+    nivel: "Intermediate"
