@@ -192,7 +192,7 @@ def pagina(lang):
         <a class="btn" href="{html.escape(p['github_url'])}" target="_blank" rel="noopener">GitHub</a>
         <a class="btn" href="mailto:{html.escape(p['email'])}">{html.escape(p['email'])}</a>
       </p>
-      <p class="local">{html.escape(p['local'])} · {html.escape(p['telefone'])}</p>
+      <p class="local">{html.escape(p['local'])}</p>
     </div>
   </section>
 {corpo}
