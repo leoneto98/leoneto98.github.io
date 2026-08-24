@@ -55,9 +55,9 @@ experiencia:
           accuracy of preventive maintenance and avoided the high operational cost of track closures.
       - tier: 1
         texto: >
-          Led the Data Science workstream of VIAbiliza, a project *identified by McKinsey as one of
-          the highest-impact initiatives in the company*. I proposed, developed and implemented the
-          predictive models currently running in production, end to end.
+          Main developer of the predictive models on VIAbiliza, a project *identified by McKinsey as one
+          of the highest-impact initiatives in the company*. I proposed the solution and implemented it
+          end to end, and the models are currently running in production.
       - tier: 1
         texto: >
           Identified the state of the art in the literature for predicting track-geometry degradation
