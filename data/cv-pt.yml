@@ -13,7 +13,7 @@ perfil:
   github_label: "github.com/leoneto98"
   resumo: >
     Cientista de Dados com Mestrado em Engenharia Elétrica (UFPR) e graduação em Física,
-    atuando em Machine Learning de ponta a ponta — da identificação da oportunidade de
+    atuando em Machine Learning de ponta a ponta, da identificação da oportunidade de
     negócio ao deploy e à manutenção do modelo em produção. Experiência com modelos
     preditivos de regressão, classificação e séries temporais aplicados a grandes volumes
     de dados de sensores, com stack Python, PyTorch e AWS. Gosto de traduzir problemas
@@ -32,7 +32,7 @@ competencias:
   - grupo: "Linguagens"
     itens: "Python, SQL (MySQL, Amazon Athena), MATLAB"
   - grupo: "ML e Deep Learning"
-    itens: "PyTorch, PyTorch Lightning, ConvLSTM, ConvGRU, CNN+Attention, LSTM, GRU, XGBoost, Random Forest, regressão, séries temporais, clustering, scikit-learn"
+    itens: "PyTorch, PyTorch Lightning, ConvLSTM, ConvGRU, CNN+Attention, LSTM, GRU, XGBoost, Random Forest, regressão, séries temporais, detecção de anomalias, clustering, scikit-learn"
   - grupo: "Visão Computacional"
     itens: "YOLO, YOLOP, OpenCV, segmentação semântica, algoritmos genéticos"
   - grupo: "Cloud e MLOps"
@@ -44,7 +44,7 @@ competencias:
 
 experiencia:
   - empresa: "Rumo Logística"
-    cargo: "Cientista de Dados — Inteligência de Dados"
+    cargo: "Cientista de Dados, Inteligência de Dados"
     periodo: "Ago 2024 – Ago 2026"
     local: "Curitiba, PR"
     contexto: >
@@ -53,8 +53,8 @@ experiencia:
       - tier: 1
         texto: >
           Elevei a precisão de *55% para 95%* e a sensibilidade de *39% para 60%* na previsão de
-          interdições de via por bitola aberta, frente ao baseline de regressão linear — aumentando
-          a assertividade das manutenções preventivas e evitando o alto custo operacional das interdições.
+          interdições de via por bitola aberta, frente ao baseline de regressão linear. Isso aumentou
+          a assertividade das manutenções preventivas e evitou o alto custo operacional das interdições.
       - tier: 1
         texto: >
           Responsável pela frente de Ciência de Dados do VIAbiliza, projeto *mapeado pela McKinsey entre
@@ -69,13 +69,18 @@ experiencia:
       - tier: 1
         texto: >
           Desenvolvi e treinei modelos de deep learning para previsão espaço-temporal das irregularidades
-          da via — arquiteturas ConvLSTM, ConvGRU e CNN+Attention em PyTorch / PyTorch Lightning — com
+          da via, com arquiteturas ConvLSTM, ConvGRU e CNN+Attention em PyTorch e PyTorch Lightning, além de um
           mecanismo próprio de fusão de variáveis exógenas (embeddings + concatenação no eixo de canais).
       - tier: 1
         texto: >
-          Resolvi o desalinhamento geográfico entre passagens do vagão instrumentado — problema conhecido
-          do setor e até então sem solução na companhia — com um algoritmo que alinha *mais de 99%* dos dados,
-          viabilizando toda a modelagem preditiva subsequente.
+          Resolvi o desalinhamento geográfico entre passagens do vagão instrumentado, um problema conhecido
+          do setor e até então sem solução na companhia, com um algoritmo que alinha *mais de 99%* dos dados
+          e viabilizou toda a modelagem preditiva subsequente.
+      - tier: 1
+        texto: >
+          Construí um algoritmo de detecção de anomalias, baseado apenas em medidas estatísticas, para
+          identificar picos de medição nos dados do vagão instrumentado. Ele separa leituras inválidas ou
+          fisicamente impossíveis antes da modelagem, o que era essencial num sinal bruto e ruidoso.
       - tier: 1
         texto: >
           Arquitetei e implementei a pipeline de dados e ML em Kedro: do ETL no Amazon Athena à geração de
@@ -87,20 +92,21 @@ experiencia:
           containerizado em AWS ECS acionado por outras equipes, com integração e consumo via APIs REST.
       - tier: 1
         texto: >
-          Tratei dados de geometria de via em larga escala — medições a cada *25 cm ao longo de mais de
-          1.500 km*, com passagens quinzenais nos dois sentidos: limpeza, normalização e construção das
-          janelas espaço-temporais usadas como entrada dos modelos.
+          Tratei dados de geometria de via em larga escala, com medições a cada *25 cm ao longo de mais de
+          1.500 km* e passagens quinzenais nos dois sentidos, fazendo a limpeza, a normalização e a construção
+          das janelas espaço-temporais usadas como entrada dos modelos.
       - tier: 1
         texto: >
           Primeiro projeto: priorizador de manutenção de dormentes, construído de ponta a ponta em cerca de
-          5 meses — ETL, enriquecimento com dados de operação (MTBT e histórico de manutenções), modelo
-          preditivo de degradação da bitola e dashboard em Power BI usado no planejamento estratégico do
-          corredor Rondonópolis/MT – Santos/SP.
+          5 meses, cobrindo ETL, enriquecimento com dados de operação (MTBT e histórico de manutenções),
+          modelo preditivo de degradação da bitola e dashboard em Power BI usado no planejamento estratégico
+          do corredor Rondonópolis/MT a Santos/SP.
       - tier: 2
         texto: >
-          Engenharia de features a partir de múltiplas fontes — tonelagem transportada (MTBT), defeitos de
-          infraestrutura, indicadores de pico e degradação, interação veículo-via (VTI), chuva, sazonalidade
-          e tipo de dormente — transformadas em tensores e incorporadas aos modelos como variáveis exógenas.
+          Engenharia de features a partir de múltiplas fontes, entre elas tonelagem transportada (MTBT),
+          defeitos de infraestrutura, indicadores de pico e degradação, interação veículo-via (VTI), chuva,
+          sazonalidade e tipo de dormente, todas transformadas em tensores e incorporadas aos modelos como
+          variáveis exógenas.
       - tier: 2
         texto: >
           Ajudei a desenvolver os ingestores que passaram a alimentar o AWS Athena: os dados do vagão
@@ -113,7 +119,7 @@ experiencia:
         texto: >
           Análise de viabilidade de novo sensor embarcado no vagão instrumentado para detecção de
           levantamento de trilho, gerando os insights que orientaram a decisão de instalação.
-      - tier: 2
+      - tier: 3
         texto: >
           Stack AWS: ingestão e consultas em Amazon Athena (awswrangler), processamento com AWS Glue e
           Lambda, armazenamento em S3, desenvolvimento e treino em Amazon SageMaker e execução em ECS;
@@ -125,7 +131,7 @@ experiencia:
           e sprint review.
 
   - empresa: "CARISSMA Institute of Automated Driving"
-    cargo: "Pesquisador — bolsista do governo alemão"
+    cargo: "Pesquisador, bolsista do governo alemão"
     periodo: "Set 2022 – Mar 2023"
     local: "Ingolstadt, Alemanha"
     contexto: ""
@@ -174,7 +180,7 @@ formacao:
       Disciplinas: Inteligência Artificial Aplicada, Aprendizado de Máquina, Visão Computacional,
       Sinais e Sistemas, Métodos Avançados em Sistemas Eletrônicos.
   - instituicao: "Technische Hochschule Ingolstadt (THI), Alemanha"
-    curso: "Mestrado Sanduíche — Direção Autônoma"
+    curso: "Mestrado Sanduíche em Direção Autônoma"
     periodo: "Set 2022 – Mar 2023"
     detalhe: >
       Bolsa do governo alemão para executar o projeto de pesquisa do mestrado no CARISSMA.
@@ -183,29 +189,29 @@ formacao:
     periodo: "Ago 2016 – Ago 2021"
     detalhe: >
       Formado com média 82,17 (escala 0 a 100), sem nenhuma reprovação. Iniciação científica (CNPq) com o
-      Prof. Dr. Cyro Ketzer Saul no desenvolvimento de um supercapacitor — coleta, análise e tratamento de dados.
+      Prof. Dr. Cyro Ketzer Saul no desenvolvimento de um supercapacitor, com coleta, análise e tratamento de dados.
 
 publicacoes:
-  - texto: "_TWICE Dataset: Digital Twin of Test Scenarios in a Controlled Environment_ — International Journal of Vehicle Systems Modelling and Testing (2025)."
+  - texto: "_TWICE Dataset: Digital Twin of Test Scenarios in a Controlled Environment_. International Journal of Vehicle Systems Modelling and Testing (2025)."
     url: "https://www.inderscienceonline.com/doi/10.1504/IJVSMT.2025.147353"
     url_label: "doi.org/10.1504/IJVSMT.2025.147353"
-  - texto: "Pré-print (arXiv) —"
+  - texto: "Pré-print (arXiv):"
     url: "https://arxiv.org/abs/2310.03895"
     url_label: "arxiv.org/abs/2310.03895"
-  - texto: "Página do projeto —"
+  - texto: "Página do projeto:"
     url: "https://twicedataset.github.io/site"
     url_label: "twicedataset.github.io/site"
-  - texto: "Dissertação completa — Acervo Digital UFPR"
+  - texto: "Dissertação completa, no Acervo Digital da UFPR:"
     url: "https://acervodigital.ufpr.br/xmlui/handle/1884/87239"
     url_label: "acervodigital.ufpr.br/handle/1884/87239"
 
 complementar:
-  - "Machine Learning Specialization — Stanford University / DeepLearning.AI (Fev – Mar 2024)"
+  - "Machine Learning Specialization, Stanford University / DeepLearning.AI (Fev a Mar 2024)"
 
 idiomas:
   - nome: "Português"
     nivel: "Nativo"
   - nome: "Inglês"
-    nivel: "Avançado — dissertação de mestrado escrita e apresentada em inglês; 6 meses na Alemanha com comunicação diária no idioma"
+    nivel: "Avançado. Dissertação de mestrado escrita e apresentada em inglês, e 6 meses na Alemanha com comunicação diária no idioma"
   - nome: "Espanhol"
     nivel: "Intermediário"

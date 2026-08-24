@@ -22,14 +22,14 @@ UI = {
         "cv_btn": "Download CV (PDF)",
         "outra_lingua": "Português",
         "outra_href": "/pt/",
-        "desc": "Data Scientist with an M.Sc. in Electrical Engineering — end-to-end machine learning, from business opportunity to production.",
+        "desc": "Data Scientist with an M.Sc. in Electrical Engineering, working on end-to-end machine learning from business opportunity to production.",
     },
     "pt": {
         "nav": ["Perfil", "Competências", "Experiência", "Formação", "Publicações", "Contato"],
         "cv_btn": "Baixar CV (PDF)",
         "outra_lingua": "English",
         "outra_href": "/",
-        "desc": "Cientista de Dados com Mestrado em Engenharia Elétrica — machine learning de ponta a ponta, da oportunidade de negócio à produção.",
+        "desc": "Cientista de Dados com Mestrado em Engenharia Elétrica, atuando em machine learning de ponta a ponta, da oportunidade de negócio à produção.",
     },
 }
 
@@ -152,14 +152,14 @@ def pagina(lang):
 <head>
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1">
-<title>{html.escape(p['nome'])} — {html.escape(p['headline'])}</title>
+<title>{html.escape(p['nome'])} | {html.escape(p['headline'])}</title>
 <meta name="description" content="{html.escape(ui['desc'])}">
 <link rel="canonical" href="{SITE_URL}{'/pt/' if lang == 'pt' else '/'}">
 <link rel="alternate" hreflang="en" href="{SITE_URL}/">
 <link rel="alternate" hreflang="pt" href="{SITE_URL}/pt/">
 <link rel="alternate" hreflang="x-default" href="{SITE_URL}/">
 <meta property="og:type" content="profile">
-<meta property="og:title" content="{html.escape(p['nome'])} — {html.escape(p['headline'])}">
+<meta property="og:title" content="{html.escape(p['nome'])} | {html.escape(p['headline'])}">
 <meta property="og:description" content="{html.escape(ui['desc'])}">
 <meta property="og:image" content="{SITE_URL}/assets/foto.jpg">
 <meta property="og:url" content="{SITE_URL}{'/pt/' if lang == 'pt' else '/'}">
