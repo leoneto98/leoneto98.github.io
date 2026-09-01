@@ -28,7 +28,7 @@ titulos:
 
 competencias:
   - grupo: "Languages"
-    itens: "Python, SQL (MySQL, Amazon Athena), MATLAB"
+    itens: "Python, PySpark, SQL (MySQL, Amazon Athena), MATLAB"
   - grupo: "ML & Deep Learning"
     itens: "PyTorch, PyTorch Lightning, ConvLSTM, ConvGRU, CNN+Attention, LSTM, GRU, XGBoost, Random Forest, regression, time series, anomaly detection, clustering, scikit-learn"
   - grupo: "Computer Vision"
@@ -81,6 +81,13 @@ experiencia:
           This was essential when working from a raw, noisy sensor signal.
       - tier: 1
         texto: >
+          Built a track defect detector from the crosslevel channel, applying spectral analysis to the
+          signal (Welch PSD over sliding windows and wavelet decomposition) to isolate the wavelength
+          bands associated with fouled ballast and sleeper (tie) defects. Grounded in the scientific
+          literature of the field and developed in-house with track geometry car data, the resulting
+          score became an exogenous variable feeding the ConvLSTM.
+      - tier: 1
+        texto: >
           Designed and implemented the data and ML pipeline in Kedro: from ETL on Amazon Athena to
           dataset generation on S3, training with experiment tracking in MLflow, and production
           inference. The pipeline is parameterised by target variable and can compare multiple candidate models.
@@ -92,7 +99,7 @@ experiencia:
         texto: >
           Processed track-geometry data at scale, with measurements every *25 cm across more than 1,500 km*
           and runs every two weeks in both directions, handling cleaning, normalisation and the construction
-          of the spatio-temporal windows used as model input.
+          of the spatio-temporal windows used as model input, with distributed processing in PySpark.
       - tier: 1
         texto: >
           First project: a sleeper (tie) maintenance prioritiser, built end to end in around 5 months,

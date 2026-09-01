@@ -30,7 +30,7 @@ titulos:
 
 competencias:
   - grupo: "Linguagens"
-    itens: "Python, SQL (MySQL, Amazon Athena), MATLAB"
+    itens: "Python, PySpark, SQL (MySQL, Amazon Athena), MATLAB"
   - grupo: "ML e Deep Learning"
     itens: "PyTorch, PyTorch Lightning, ConvLSTM, ConvGRU, CNN+Attention, LSTM, GRU, XGBoost, Random Forest, regressão, séries temporais, detecção de anomalias, clustering, scikit-learn"
   - grupo: "Visão Computacional"
@@ -58,7 +58,7 @@ experiencia:
       - tier: 1
         texto: >
           Principal desenvolvedor dos modelos preditivos do VIAbiliza, projeto *mapeado pela McKinsey entre
-          os de maior impacto da companhia*. Propus a solução e a implementei de ponta a ponta, e os modelos
+          os de maior impacto da companhia*. Propus a solução e a implementei de ponta a ponta, os modelos
           estão hoje em produção.
       - tier: 1
         texto: >
@@ -83,6 +83,13 @@ experiencia:
           fisicamente impossíveis antes da modelagem, o que era essencial num sinal bruto e ruidoso.
       - tier: 1
         texto: >
+          Desenvolvi um detector de defeitos de via a partir do canal de crosslevel, com análise espectral
+          do sinal (PSD por Welch em janelas deslizantes e decomposição wavelet) para isolar as faixas de
+          comprimento de onda associadas a lastro contaminado e a defeitos em dormentes. Fundamentado na
+          literatura científica da área e desenvolvido internamente com os dados do vagão instrumentado, o
+          score resultante passou a alimentar o ConvLSTM como variável exógena.
+      - tier: 1
+        texto: >
           Arquitetei e implementei a pipeline de dados e ML em Kedro: do ETL no Amazon Athena à geração de
           datasets no S3, treinamento com rastreamento de experimentos em MLflow e inferência em produção,
           parametrizada por variável-alvo e capaz de comparar múltiplos modelos candidatos.
@@ -94,7 +101,8 @@ experiencia:
         texto: >
           Tratei dados de geometria de via em larga escala, com medições a cada *25 cm ao longo de mais de
           1.500 km* e passagens quinzenais nos dois sentidos, fazendo a limpeza, a normalização e a construção
-          das janelas espaço-temporais usadas como entrada dos modelos.
+          das janelas espaço-temporais usadas como entrada dos modelos, com processamento distribuído em
+          PySpark.
       - tier: 1
         texto: >
           Primeiro projeto: priorizador de manutenção de dormentes, construído de ponta a ponta em cerca de
